@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    background-color: #e6f2f5; /* Light, clean background */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    background-color: #ffffff; /* Clean white form background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 75vh;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+/* 🎯 Hover Effect */
+#form:hover {
+    background-color: #f3fbfd; /* Very light blue on hover */
+    transform: scale(1.01);
+}
+
+#detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: #003366;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.jitun:hover{
+    background-color: rgb(163, 163, 172);
+ transition: all;
+ transition-duration: 00ms;
+ transform:scale(1.1);
+}
+#heading{
+    background-color: rgb(218, 218, 248);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 20px;
+}
+
+@media (max-width:900px){
+    #form{
+        height: 80vh;
+    }
+    
+    
+}
+@media (max-width:540px){
+    #title{
+       font-size: larger;
+    }
+}
+@media (max-width:330px){
+    #title{
+       font-size: small;
+    }
+}

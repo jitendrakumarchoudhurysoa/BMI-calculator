@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="heading">
+        <h1 id="title">
+            BODY MASS INDEX CALCULATOR
+        </h1>
+
+    </div>
+<br><br>
+    <div id="main">
+        <div id="form">
+            <form id="detail" onsubmit="return fun(event)">
+                <div class="form-group">
+                    <label for="age">Enter your age:</label>
+                    <input type="number" id="age" placeholder="e.g. 25">
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Enter your weight (in kg):</label>
+                    <input type="number" id="weight" placeholder="e.g. 70">
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Enter your height (in inch):</label>
+                    <input type="number" id="height" placeholder="e.g. 70">
+                </div>
+
+                <div class="submit">
+                    <center><input type="reset" class="jitun"></center>
+                    <center><input type="submit" class="jitun" value="Calculate BMI"></center>
+                </div>
+
+                <div class="form-group">
+                    <label for="result">Your BMI Index is</label>
+                    <input type="text" id="find" readonly>
+                </div>
+
+                <div id="des"></div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
